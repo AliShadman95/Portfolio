@@ -35,3 +35,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
+/* HERO */
+
+.site-hero,
+.site-hero .row {
+  height: 100vh;
+  min-height: 800px;
+}
+
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
