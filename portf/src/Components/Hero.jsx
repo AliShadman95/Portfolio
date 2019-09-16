@@ -1,30 +1,32 @@
 import React from "react";
+import VideoPosterBG from "../Media/poster.jpg";
+import VideoBG from "../Media/Particle_Wave_4K_Motion_Background_Loop.mp4";
 
 const Hero = () => {
   return (
     <section
-      className="section-home"
-      id="site-hero"
+      className="site-hero"
+      id="section-home"
       data-stellar-background-ratio="0.5"
     >
-      <div class="container">
-        <div class="row intro-text align-items-center justify-content-center">
-          <div class="col-md-10 text-center">
-            <h1 class="site-heading site-animate fadeInUp site-animated">
+      <video id="videoBG" poster={VideoPosterBG} autoPlay muted loop>
+        <source src={VideoBG} type="video/mp4" />
+      </video>
+      <div className="container">
+        <div className="row intro-text align-items-center justify-content-center">
+          <div className="col-md-10 text-center">
+            <h1 className="site-heading site-animate fadeInUp site-animated">
               Howdy, I'm <strong>Ali Shadman</strong>
             </h1>
-            <p class="lead site-subheading mb-4 site-animate fadeInUp site-animated">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non
-              vestibulum ex. Fusce a ex mauris. Sed interdum mattis nibh.
-              Quisque ut augue velit. Donec commodo libero ac felis mattis, ut
-              lobortis nibh facilisis. Aliquam erat volutpat. Sed congue ornare
-              nunc at mollis. Quisque mauris nulla, dapibus nec nisi sit amet,
-              finibus ultricies ipsum.
+            <p className="lead site-subheading mb-4 site-animate fadeInUp site-animated">
+              A Product Designer working at Facebook. Separated they live in
+              Bookmarksgrove right at the coast of the Semantics, a large
+              language ocean.
             </p>
             <p>
               <a
                 href="#section-about"
-                class="smoothscroll btn btn-primary px-4 py-3"
+                className="smoothscroll btn btn-primary px-4 py-3"
               >
                 More On Me
               </a>
@@ -32,13 +34,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <video id="videoBG" poster="" autoplay muted loop>
-        <source
-          src="../Media/Particle_Wave_4K_Motion_Background_Loop.mp4"
-          type="video/mp4"
-        />
-      </video>
+      ;
     </section>
   );
 };
