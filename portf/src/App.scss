@@ -2,7 +2,7 @@ body {
   background: #fff;
   color: #798a9a;
   line-height: 1.7;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
@@ -31,6 +31,34 @@ a:active {
   text-decoration: none;
 }
 
+/* BackToTop component styles*/
+.back-to-top {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.175rem 0.55rem;
+  line-height: 1.1;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transition: background-color 0.3s, opacity 0.4s, visibility 0.4s;
+
+  &.show-back-to-top {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 /* NAVBAR */
 
 .parent-nav-link-padding,
@@ -45,7 +73,7 @@ a:active {
   border-radius: 0px;
   margin-bottom: 0px;
   background: none;
-  position: fixed;
+  position: absolute;
   top: 20px;
   width: 100%;
   z-index: 200;
@@ -63,13 +91,6 @@ a:active {
   .site-navbar.bg-light {
     background: #fff !important;
     top: 0;
-  }
-  .site-navbar.bg-light .navbar-brand {
-    display: inline-block;
-    font-size: 18px;
-    border: 2px solid #000;
-    padding: 2px 10px !important;
-    color: #000;
   }
 }
 .site-navbar .navbar-nav > li > a {
@@ -187,12 +208,16 @@ a:active {
 .btn.btn-primary:focus {
   background: #0262c8;
 }
+.smoothscroll {
+  margin-right: 2%;
+}
 
 /* ABOUT ME */
 
 .my-image {
   margin-left: 10%;
   width: 75%;
+  box-shadow: 10px 10px 5px #ccc;
 }
 
 .section-heading {
