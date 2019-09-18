@@ -19,9 +19,8 @@ const Hero = () => {
               Howdy, I'm <strong>Ali Shadman</strong>
             </h1>
             <p className="lead site-subheading mb-4 site-animate fadeInUp site-animated">
-              A Product Designer working at Facebook. Separated they live in
-              Bookmarksgrove right at the coast of the Semantics, a large
-              language ocean.
+              A Rome-based Web developer & Programmer. I make Web Application
+              usually with React or ASP.NET.
             </p>
             <p>
               <a

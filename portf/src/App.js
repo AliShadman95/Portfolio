@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+
 import BackToTop from "../node_modules/react-back-to-top-button/build/index";
 import NavBar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import AboutMe from "./Components/AboutMe";
+import FLBanner from "./Components/FreelancerBanner";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 import "./App.scss";
 
 export default class App extends Component {
@@ -23,6 +26,11 @@ export default class App extends Component {
         </BackToTop>
         <NavBar />
         <Hero />
+
+        <AboutMe />
+
+        <FLBanner />
+
         <AboutMe />
       </div>
     );
