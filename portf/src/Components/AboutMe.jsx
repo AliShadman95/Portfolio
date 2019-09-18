@@ -39,7 +39,7 @@ const AboutMe = () => {
                 experience and I'm confortable developing on the frontend or
                 backend.
                 <br></br> I have diverse set of skills,ranging from HTML + CSS +
-                javascript, to React, all the way to ASP.NET and SQL Server.
+                JS, to React, all the way to ASP.NET and SQL Server.
               </p>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>

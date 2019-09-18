@@ -39,25 +39,7 @@ class NavBar extends Component {
 
               <li className="nav-item">
                 <a className="nav-link" href="#section-services">
-                  Services
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#section-portfolio">
-                  Portfolio
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#section-resume">
-                  Resume
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#section-blog">
-                  Blog
+                  Projects
                 </a>
               </li>
 
