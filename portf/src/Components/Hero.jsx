@@ -4,6 +4,9 @@ import VideoBG from "../Media/Particle_Wave_4K_Motion_Background_Loop.mp4";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
+
 const Hero = () => {
   return (
     <section
@@ -30,18 +33,19 @@ const Hero = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
               <p>
-                <a
-                  href="#section-about"
-                  className="smoothscroll btn btn-primary px-4 py-3"
-                >
-                  More On Me
-                </a>
+                <AwesomeButton type="primary">
+                  <a
+                    href="#section-about"
+                    className="smoothscroll btn  px-4 py-3"
+                  >
+                    More On Me
+                  </a>
+                </AwesomeButton>
               </p>
             </ScrollAnimation>
           </div>
         </div>
       </div>
-      ;
     </section>
   );
 };

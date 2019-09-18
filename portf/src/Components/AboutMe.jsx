@@ -3,6 +3,9 @@ import pImage from "../Media/cutmypic.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
+
 const AboutMe = () => {
   return (
     <section className="site-section" id="section-about">
@@ -44,15 +47,19 @@ const AboutMe = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
               <p>
-                <a
-                  href="#section-contact"
-                  className="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                >
-                  Hire Me
-                </a>
-                <a href="#" className="btn btn-secondary px-4 py-2 btn-sm">
-                  Download CV
-                </a>
+                <AwesomeButton type="primary">
+                  <a
+                    href="#section-contact"
+                    className="btn  px-4 py-2 btn-sm smoothscroll"
+                  >
+                    Hire Me
+                  </a>
+                </AwesomeButton>
+                <AwesomeButton type="primary">
+                  <a href="#" className="btn px-4 py-2 btn-sm">
+                    Download CV
+                  </a>
+                </AwesomeButton>
               </p>
             </ScrollAnimation>
           </div>

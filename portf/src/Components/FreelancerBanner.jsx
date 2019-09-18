@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
+
 class FreeLancerBanner extends Component {
   state = {};
   render() {
@@ -20,13 +23,15 @@ class FreeLancerBanner extends Component {
             <div class="col-md-4 col-lg-3 d-flex align-items-center">
               <ScrollAnimation animateIn="fadeInUp" animateOnce>
                 <p class="mb-0">
-                  <a
-                    href="#"
-                    class="btn btn-white py-4 px-5"
-                    style={{ backgroundColor: "#fff" }}
-                  >
-                    Hire me
-                  </a>
+                  <AwesomeButton type="secondary">
+                    <a
+                      href="#"
+                      className="btn py-4 px-5"
+                      style={{ color: "rgb(0, 0, 0)" }}
+                    >
+                      Hire me
+                    </a>
+                  </AwesomeButton>
                 </p>
               </ScrollAnimation>
             </div>

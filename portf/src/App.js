@@ -5,6 +5,8 @@ import NavBar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import AboutMe from "./Components/AboutMe";
 import FLBanner from "./Components/FreelancerBanner";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
@@ -31,7 +33,8 @@ export default class App extends Component {
 
         <FLBanner />
 
-        <AboutMe />
+        <Projects />
+        <Contact />
       </div>
     );
   }

@@ -186,28 +186,31 @@ a:active {
   }
 }
 /* BUTTONS */
+
+.aws-btn--primary {
+  --button-default-border-radius: 100px;
+  --button-primary-color: #0262c8;
+  --button-primary-color-dark: #024892;
+  --button-horizontal-padding: 3px;
+  --button-raise-level: 3px;
+}
+.aws-btn--secondary {
+  --button-default-border-radius: 100px;
+  --button-horizontal-padding: 3px;
+  --button-raise-level: 3px;
+}
 .btn {
-  border-radius: 100px;
+  border-radius: 25px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: #fff;
+  white-space: nowrap;
 }
 
-.btn:active,
-.btn:focus {
-  outline: none;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-.btn.btn-primary {
+.btn:hover {
   color: #fff;
 }
 
-.btn.btn-primary:hover,
-.btn.btn-primary:active,
-.btn.btn-primary:focus {
-  background: #0262c8;
-}
 .smoothscroll {
   margin-right: 2%;
 }
@@ -317,4 +320,54 @@ a:active {
 
 .section-banner h2 span {
   font-weight: 800;
+}
+
+/* PROJECTS */
+
+.carousel-img {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slick-active:focus {
+  cursor: grabbing;
+}
+
+.slick-active:hover {
+  cursor: grab;
+}
+
+.slick-arrow {
+  background-color: #007bff;
+}
+
+/* CONTACT */
+.form-control {
+  border: none !important;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.site-form .form-control {
+  border: 1px solid #b3bdc6;
+}
+
+.site-contact-details,
+.site-contact-details li {
+  padding: 0;
+  margin: 0;
+}
+
+.site-contact-details li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.site-contact-details li > span {
+  color: #2c3e50;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
 }
