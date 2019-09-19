@@ -1,11 +1,16 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
-const api_key = "6d2ce74eb9b1eb25f92373ee21fee95c-bbbc8336-c2e56af6";
-const domain = "sandboxad7fa443b3db43b69ad60721cf3eaf7d.mailgun.org";
-var mailgun = require("mailgun-js")({ apiKey: api_key, domain: domain });
 const bodyParser = require("body-parser");
+require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 5000;
+
+var mailgun = require("mailgun-js")({
+  apiKey: process.env.API_KEY,
+  domain: process.env.DOMAIN
+});
+
+console.log(process.env);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
