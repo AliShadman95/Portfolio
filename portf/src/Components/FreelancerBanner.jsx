@@ -20,7 +20,7 @@ class FreeLancerBanner extends Component {
               </ScrollAnimation>
             </div>
 
-            <div class="col-md-4 col-lg-3 d-flex align-items-center">
+            <div class="col-md-4 col-lg-3 d-flex  align-items-center">
               <ScrollAnimation animateIn="fadeInUp" animateOnce>
                 <p class="mb-0">
                   <AwesomeButton type="secondary">

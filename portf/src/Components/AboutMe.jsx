@@ -45,9 +45,9 @@ const AboutMe = () => {
                 JS, to React, all the way to ASP.NET and SQL Server.
               </p>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
+            <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
               <p>
-                <AwesomeButton type="primary">
+                <AwesomeButton type="primary" className="mr">
                   <a
                     href="#section-contact"
                     className="btn  px-4 py-2 btn-sm smoothscroll"
@@ -65,14 +65,12 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="row pt-5">
-          <div className="col-md-3 mb-3">
-            <div className="section-heading">
-              <ScrollAnimation animateIn="fadeInUp" animateOnce>
-                <h2>
-                  My <strong>Skills</strong>
-                </h2>
-              </ScrollAnimation>
-            </div>
+          <div className="section-heading col-md-3 mb-3 text-center">
+            <ScrollAnimation animateIn="fadeInUp" offset="200" animateOnce>
+              <h2>
+                My <strong>Skills</strong>
+              </h2>
+            </ScrollAnimation>
           </div>
           <div className="col-md-9">
             <div className="skill">

@@ -1,6 +1,6 @@
 import React from "react";
 import VideoPosterBG from "../Media/poster.jpg";
-import VideoBG from "../Media/Particle_Wave_4K_Motion_Background_Loop.mp4";
+import VideoBG from "../Media/180226_A_03.mp4";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 

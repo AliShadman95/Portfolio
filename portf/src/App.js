@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Element } from "react-scroll";
 
 import BackToTop from "../node_modules/react-back-to-top-button/build/index";
 import NavBar from "./Components/Navbar";
@@ -7,6 +8,7 @@ import AboutMe from "./Components/AboutMe";
 import FLBanner from "./Components/FreelancerBanner";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
@@ -27,14 +29,20 @@ export default class App extends Component {
           </svg>
         </BackToTop>
         <NavBar />
-        <Hero />
-
-        <AboutMe />
-
+        <Element id="home" name="home">
+          <Hero />
+        </Element>
+        <Element id="about" name="about">
+          <AboutMe />
+        </Element>
         <FLBanner />
-
-        <Projects />
-        <Contact />
+        <Element id="projects" name="projects">
+          <Projects />
+        </Element>
+        <Element id="contact" name="contact">
+          <Contact />
+        </Element>
+        <Footer />
       </div>
     );
   }

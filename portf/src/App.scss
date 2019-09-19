@@ -111,6 +111,10 @@ a:active {
   color: #57d131 !important;
 }
 
+.nav-link > span:hover {
+  cursor: pointer;
+}
+
 /* HERO */
 
 .site-hero {
@@ -123,7 +127,6 @@ a:active {
 .site-hero,
 .site-hero .row {
   height: 100vh;
-  min-height: 700px;
 }
 .site-hero:before {
   content: "";
@@ -188,17 +191,30 @@ a:active {
 /* BUTTONS */
 
 .aws-btn--primary {
-  --button-default-border-radius: 100px;
+  --button-default-border-radius: 25px;
   --button-primary-color: #0262c8;
   --button-primary-color-dark: #024892;
   --button-horizontal-padding: 3px;
   --button-raise-level: 3px;
 }
 .aws-btn--secondary {
-  --button-default-border-radius: 100px;
+  --button-default-border-radius: 25px;
   --button-horizontal-padding: 3px;
   --button-raise-level: 3px;
 }
+
+.aws-btn--facebook,
+.aws-btn--twitter,
+.aws-btn--instagram,
+.aws-btn--linkedin,
+.aws-btn--github {
+  --button-default-border-radius: 25px;
+  --button-horizontal-padding: 20px;
+  --button-raise-level: 3px;
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
+
 .btn {
   border-radius: 25px;
   text-transform: uppercase;
@@ -213,6 +229,10 @@ a:active {
 
 .smoothscroll {
   margin-right: 2%;
+}
+
+.mr {
+  margin-right: 5%;
 }
 
 /* ABOUT ME */
@@ -370,4 +390,30 @@ a:active {
   font-weight: 500;
   margin-bottom: 5px;
   display: block;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 3em 0;
+}
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+.site-footer .social-item {
+  /*  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #b3bdc6;
+  position: relative;
+  border-radius: 50%;
+  font-size: 22px;
+  margin: 0 10px; */
+}
+.site-footer .social-item > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Scroll from "react-scroll";
+const ScrollLink = Scroll.Link;
 
 class NavBar extends Component {
   render() {
@@ -26,27 +28,51 @@ class NavBar extends Component {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  Home
-                </a>
+                <ScrollLink
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link active"
+                >
+                  <span>Home</span>
+                </ScrollLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#section-about">
-                  About
-                </a>
+                <ScrollLink
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
+                  <span>About</span>
+                </ScrollLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#section-services">
-                  Projects
-                </a>
+                <ScrollLink
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
+                  <span>Projects</span>
+                </ScrollLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#section-contact">
-                  Contact
-                </a>
+                <ScrollLink
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="nav-link"
+                >
+                  <span>Contact</span>
+                </ScrollLink>
               </li>
             </ul>
           </div>
