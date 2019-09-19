@@ -3,33 +3,38 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import axios from "axios";
 
 class Contact extends Component {
-  state = { isLoading: false, data: {} };
+  state = {
+    isLoading: false,
+    name: "",
+    email: "",
+    message: "",
+    btnDisabled: false
+  };
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.isLoading !== prevState.isLoading) {
       if (this.state.isLoading) {
-        // Call our fetch function below once the IsLoading updates
-        this.callBackendAPI()
-          .then(res => this.setState({ data: res.express, isLoading: false }))
-          .catch(err => console.log(err));
+        const { name, email, message } = this.state;
+        const form = axios.post("/express_backend", { name, email, message });
       }
     }
   }
-  // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
-  callBackendAPI = async () => {
-    const response = await fetch("/express_backend");
-    const body = await response.json();
 
-    if (response.status !== 200) {
-      throw Error(body.message);
-    }
-    return body;
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   onSubmitClick = e => {
-    this.setState({ isLoading: true });
+    e.preventDefault();
+    if (this.state.btnDisabled) {
+      return;
+    } else {
+      // Send
+      this.setState({ isLoading: true, btnDisabled: true });
+    }
   };
 
   render() {
@@ -47,7 +52,7 @@ class Contact extends Component {
               </div>
             </div>
             <div class="col-md-7 mb-5 mb-md-0">
-              <form action="" class="site-form">
+              <form onSubmit={this.onSubmitClick} class="site-form">
                 <ScrollAnimation animateIn="fadeInUp" delay="100" animateOnce>
                   <h3 class="mb-5">Get In Touch</h3>
                 </ScrollAnimation>
@@ -55,8 +60,10 @@ class Contact extends Component {
                   <ScrollAnimation animateIn="fadeInUp" delay="150" animateOnce>
                     <input
                       type="text"
+                      name="name"
                       class="form-control px-3 py-4"
                       placeholder="Your Name"
+                      onChange={this.handleChange}
                     />
                   </ScrollAnimation>
                 </div>
@@ -64,43 +71,37 @@ class Contact extends Component {
                   <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
                     <input
                       type="email"
+                      name="email"
                       class="form-control px-3 py-4"
                       placeholder="Your Email"
+                      onChange={this.handleChange}
                     />
                   </ScrollAnimation>
                 </div>
-                <div class="form-group">
-                  <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
-                    <input
-                      type="email"
-                      class="form-control px-3 py-4"
-                      placeholder="Your Phone"
-                    />
-                  </ScrollAnimation>
-                </div>
+
                 <div class="form-group mb-5">
-                  <ScrollAnimation animateIn="fadeInUp" delay="300" animateOnce>
+                  <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
                     <textarea
                       class="form-control px-3 py-4"
+                      name="message"
                       cols="30"
                       rows="10"
                       placeholder="Write a Message"
+                      onChange={this.handleChange}
                     ></textarea>
                   </ScrollAnimation>
                 </div>
                 <div class="form-group">
-                  <ScrollAnimation
-                    animateIn="fadeInUp"
-                    offset="200"
-                    delay="325"
-                    animateOnce
-                  >
-                    <AwesomeButton type="primary">
+                  <ScrollAnimation animateIn="fadeInUp" delay="300" animateOnce>
+                    <AwesomeButton
+                      type="primary"
+                      disabled={this.state.btnDisabled}
+                    >
                       <input
                         type="submit"
-                        class="btn px-4 py-3"
+                        className="btn px-4 py-3"
                         value="Send Message"
-                        onClick={this.onSubmitClick}
+                        disabled={this.state.btnDisabled}
                       />
                     </AwesomeButton>
                   </ScrollAnimation>
