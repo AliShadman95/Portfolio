@@ -13,7 +13,7 @@
     "popper": "^1.0.1",
     "react": "^16.9.0",
     "react-animate-on-scroll": "^2.1.5",
-    "react-awesome-button": "^6.1.2",
+    "react-awesome-button": "git+https://github.com/AliShadman95/react-awesome-button.git",
     "react-back-to-top-button": "0.0.14",
     "react-dom": "^16.9.0",
     "react-flickity-component": "^3.3.1",

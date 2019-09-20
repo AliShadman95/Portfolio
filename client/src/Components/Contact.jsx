@@ -10,6 +10,7 @@ class Contact extends Component {
     isLoading: false,
     name: "",
     email: "",
+    subject: "",
     message: "",
     btnDisabled: false
   };
@@ -17,8 +18,13 @@ class Contact extends Component {
   componentDidUpdate(prevProps, prevState) {
     if (this.state.isLoading !== prevState.isLoading) {
       if (this.state.isLoading) {
-        const { name, email, message } = this.state;
-        const form = axios.post("/express_backend", { name, email, message });
+        const { name, email, subject, message } = this.state;
+        const form = axios.post("/express_backend", {
+          name,
+          email,
+          subject,
+          message
+        });
       }
     }
   }
@@ -74,6 +80,17 @@ class Contact extends Component {
                       name="email"
                       class="form-control px-3 py-4"
                       placeholder="Your Email"
+                      onChange={this.handleChange}
+                    />
+                  </ScrollAnimation>
+                </div>
+                <div class="form-group">
+                  <ScrollAnimation animateIn="fadeInUp" delay="225" animateOnce>
+                    <input
+                      type="subject"
+                      name="subject"
+                      class="form-control px-3 py-4"
+                      placeholder="Subject"
                       onChange={this.handleChange}
                     />
                   </ScrollAnimation>

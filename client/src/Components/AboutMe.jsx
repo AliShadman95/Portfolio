@@ -47,17 +47,9 @@ const AboutMe = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
               <p>
-                <AwesomeButton type="primary" className="mr">
-                  <a
-                    href="#section-contact"
-                    className="btn  px-4 py-2 btn-sm smoothscroll"
-                  >
-                    Hire Me
-                  </a>
-                </AwesomeButton>
                 <AwesomeButton type="primary">
-                  <a href="#" className="btn px-4 py-2 btn-sm">
-                    Download CV
+                  <a href="#section-contact" className="btn px-4 py-2 btn-sm">
+                    HIRE ME
                   </a>
                 </AwesomeButton>
               </p>

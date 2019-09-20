@@ -10,32 +10,22 @@ const Footer = () => {
         <div class="row mb-3">
           <div class="col-md-12 text-center">
             <p>
-              <AwesomeButtonSocial type="facebook">
-                <a href="#" class="social-item">
-                  <span class="icon-facebook2"></span>
-                </a>
-              </AwesomeButtonSocial>
-              <AwesomeButtonSocial type="twitter">
-                <a href="#" class="social-item">
-                  <span class="icon-twitter"></span>
-                </a>
-              </AwesomeButtonSocial>
+              <AwesomeButtonSocial
+                type="twitter"
+                url="https://twitter.com/AliShadman13"
+              ></AwesomeButtonSocial>
               <AwesomeButtonSocial
                 type="instagram"
                 url="https://www.instagram.com/alishadman95"
-              >
-                <span class="icon-instagram2"></span>
-              </AwesomeButtonSocial>
-              <AwesomeButtonSocial type="linkedin">
-                <a href="#" class="social-item">
-                  <span class="icon-linkedin2"></span>
-                </a>
-              </AwesomeButtonSocial>
-              <AwesomeButtonSocial type="github">
-                <a href="#" class="social-item">
-                  <span class="icon-vimeo"></span>
-                </a>
-              </AwesomeButtonSocial>
+              ></AwesomeButtonSocial>
+              <AwesomeButtonSocial
+                type="linkedin"
+                url="https://www.linkedin.com/in/ali-shadman-60aba1193/"
+              ></AwesomeButtonSocial>
+              <AwesomeButtonSocial
+                type="github"
+                url="https://github.com/AliShadman95"
+              ></AwesomeButtonSocial>
             </p>
           </div>
         </div>

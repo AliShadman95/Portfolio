@@ -10,8 +10,6 @@ var mailgun = require("mailgun-js")({
   domain: process.env.DOMAIN
 });
 
-console.log(process.env);
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -27,8 +25,8 @@ app.post("/express_backend", (req, res) => {
   var data = {
     from: req.body.email,
     to: "alishadman955@gmail.com",
-    subject: "Hello",
-    text: "Testing some Mailgun awesomeness!"
+    subject: req.body.subject,
+    text: req.body.message
   };
 
   mailgun.messages().send(data, function(error, body) {
