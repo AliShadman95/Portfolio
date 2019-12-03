@@ -37,8 +37,8 @@ const Footer = () => {
               async=""
               src="https://www.google-analytics.com/analytics.js"
             ></script>
-            2019 All rights reserved | This template is made with &hearts; by
-            Ali Shadman
+            2019 All rights reserved | This website is made with &hearts; by Ali
+            Shadman
           </p>
         </div>
       </div>

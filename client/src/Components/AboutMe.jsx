@@ -32,7 +32,7 @@ const AboutMe = () => {
             <ScrollAnimation animateIn="fadeInUp" delay="100" animateOnce>
               <p className="lead">
                 Hello! My name is Ali Shadman,<br></br>
-                and I'm a Rome-based Freelancer
+                and I'm a Rome-based web developer
               </p>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
@@ -117,7 +117,7 @@ const AboutMe = () => {
             </div>
             <div className="skill">
               <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
-                <h3>JS</h3>
+                <h3>NODE JS</h3>
                 <div className="progress">
                   <div
                     className="progress-bar"
