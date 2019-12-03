@@ -37,12 +37,11 @@ const AboutMe = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>
               <p className="mb-5  ">
-                I primarly use <b>ASP.NET</b>, but picking up a new framework or
-                language isn't a problem. I have a discrete programming
-                experience and I'm confortable developing on the frontend or
-                backend.
+                I primarly use <b>React</b>, but picking up a new framework or
+                language isn't a problem. I have a good programming experience
+                and I'm confortable developing on the frontend or backend.
                 <br></br> I have diverse set of skills,ranging from HTML + CSS +
-                JS, to React, all the way to ASP.NET and SQL Server.
+                JS, to React, all the way to ASP.NET and SQL.
               </p>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
@@ -67,7 +66,7 @@ const AboutMe = () => {
           <div className="col-md-9">
             <div className="skill">
               <ScrollAnimation animateIn="fadeInUp" delay="50" animateOnce>
-                <h3>ASP.NET</h3>
+                <h3>REACT</h3>
                 <div className="progress">
                   <div
                     className="progress-bar"
@@ -135,7 +134,7 @@ const AboutMe = () => {
             </div>
             <div className="skill">
               <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
-                <h3>Bootstrap</h3>
+                <h3>ASP.NET</h3>
                 <div className="progress">
                   <div
                     className="progress-bar"
