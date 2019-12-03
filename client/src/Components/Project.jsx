@@ -15,6 +15,7 @@ const BigProject = ({ img, title, text, shortText, gitLink, url }) => {
           <div style={matches.small ? { height: "50vh" } : { width: "50vw" }}>
             <div class="card" style={{ borderColor: "#0075f6" }}>
               <img class="card-img-top" src={img} alt="Card" />
+
               <div class="card-body">
                 <h4 class="card-title">
                   <a

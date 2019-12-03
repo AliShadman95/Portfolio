@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import placeholderProjectImage from "../Media/work-in-progress-457150.png";
+import placeholderProjectImage from "../Media/workprog.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 import chatScreen from "../Media/chatscreen.png";
@@ -12,6 +12,7 @@ import Project from "./Project";
 var settings = {
   dots: true,
   arrows: false,
+  fade: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -50,17 +51,23 @@ const Projects = () => {
                   />
                 </div>
                 <div>
-                  <img
-                    src={placeholderProjectImage}
-                    alt="ImgPlaceholder"
-                    className="carousel-img"
+                  <Project
+                    img={placeholderProjectImage}
+                    title="Work in progress!"
+                    text="Work in progress!"
+                    shortText="Work in progress!"
+                    gitLink="https://google.com"
+                    url="https://google.com"
                   />
                 </div>
                 <div>
-                  <img
-                    src={placeholderProjectImage}
-                    alt="ImgPlaceholder"
-                    className="carousel-img"
+                  <Project
+                    img={placeholderProjectImage}
+                    title="Work in progress!"
+                    text="Work in progress!"
+                    shortText="Work in progress!"
+                    gitLink="https://google.com"
+                    url="https://google.com"
                   />
                 </div>
               </Slider>

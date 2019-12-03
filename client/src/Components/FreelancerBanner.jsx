@@ -25,7 +25,7 @@ class FreeLancerBanner extends Component {
                 <p class="mb-0">
                   <AwesomeButton type="secondary">
                     <a
-                      href="#"
+                      href="#section-contact"
                       className="btn py-4 px-5"
                       style={{ color: "rgb(0, 0, 0)" }}
                     >
