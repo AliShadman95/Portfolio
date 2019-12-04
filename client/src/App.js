@@ -16,7 +16,6 @@ import "./App.scss";
 
 export default class App extends Component {
   render() {
-    // We pass a hidden prop to Navbar which can render className="hidden" if the prop is true
     return (
       <div className="App">
         <BackToTop showAt={400} speed={1500} easing="easeInOutQuint">
