@@ -15,11 +15,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors);
 
-// create a GET route
-app.get("/express_backend", (req, res) => {
-  res.send({ express: "YOUR EXPRESS BACKEND IS CONNECTED TO REACT" });
-});
-
 // create a POST route
 app.post("/express_backend", (req, res) => {
   console.log(req.body.email);
