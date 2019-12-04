@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors);
 
 // create a POST route
-app.post("/express_backend", (req, res) => {
+app.post("/", (req, res) => {
   console.log(req.body.email);
 
   var data = {
