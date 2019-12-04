@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-var mailgun = require("mailgun-js")({
+/* var mailgun = require("mailgun-js")({
   apiKey: process.env.API_KEY,
   domain: process.env.DOMAIN
-});
+}); */
 
 router.get("/", (req, res) => {
   res.send("ser is up and runn");
