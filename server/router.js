@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
-/* var mailgun = require("mailgun-js")({
+var mailgun = require("mailgun-js")({
   apiKey: process.env.API_KEY,
   domain: process.env.DOMAIN
-}); */
+});
 
 router.get("/", (req, res) => {
   res.send("ser is up and runn");
 });
 
 // create a POST route
-/* router.post("/post", (req, res) => {
+router.post("/post", (req, res) => {
   console.log(req.body.email);
 
   var data = {
@@ -27,6 +27,6 @@ router.get("/", (req, res) => {
       console.log(body);
     }
   });
-}); */
+});
 
 module.exports = router;
