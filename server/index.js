@@ -1,22 +1,22 @@
-const express = require("express");
-const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 dotenv.config();
+var cors = require("cors");
+const express = require("express");
 const app = express();
-const port = process.env.PORT;
-const cors = require("cors");
+
+app.use(cors());
 var http = require("http");
+const PORT = process.env.PORT || 3005;
 const router = require("./router");
+var bodyParser = require("body-parser");
 
 const server = http.createServer(app);
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors);
 
 app.use(router);
 
-// console.log that your server is up and running
-server.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+server.listen(PORT, () => {
+  console.log("listening on *:3005");
 });
