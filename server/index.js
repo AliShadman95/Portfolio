@@ -1,10 +1,14 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
+var http = require("http");
+
+const server = http.createServer(app);
 
 var mailgun = require("mailgun-js")({
   apiKey: process.env.API_KEY,
@@ -14,6 +18,10 @@ var mailgun = require("mailgun-js")({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors);
+
+app.get("/", (req, res) => {
+  res.send("get sended");
+});
 
 // create a POST route
 app.post("/", (req, res) => {
@@ -36,4 +44,4 @@ app.post("/", (req, res) => {
 });
 
 // console.log that your server is up and running
-app.listen(port, () => console.log(`Listening on port ${port}`));
+server.listen(port, () => console.log(`Listening on port ${port}`));
