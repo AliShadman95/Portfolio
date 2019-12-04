@@ -17,4 +17,6 @@ app.use(cors);
 app.use(router);
 
 // console.log that your server is up and running
-server.listen(port, () => console.log(`Listening on port ${port}`));
+server.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
