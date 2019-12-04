@@ -38,30 +38,6 @@ app.post("/express_backend", (req, res) => {
       console.log(body);
     }
   });
-
-  /* 
-  let testAccount = nodemailer.createTestAccount();
-
-  const transporter = nodemailer.createTransport({
-    service: "gmail", // no need to set host or port etc.
-    auth: {
-      user: "alishadman955@gmail.com",
-      pass: "a1"
-    }
-  });
-  var message = {
-    from: "test@gmail.com",
-    to: "alishadman955@gmail.com",
-    subject: "Message title",
-    text: "Plaintext version of the message",
-    html: "<p>HTML version of the message</p>"
-  };
-
-  transporter.sendMail(message, (err, info) => {
-    if (err) {
-      console.log(err);
-    }
-  }); */
 });
 
 // console.log that your server is up and running
