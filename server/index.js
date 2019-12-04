@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 5000;
+const cors = require("cors");
 
 var mailgun = require("mailgun-js")({
   apiKey: process.env.API_KEY,
@@ -12,6 +13,7 @@ var mailgun = require("mailgun-js")({
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors);
 
 // create a GET route
 app.get("/express_backend", (req, res) => {
