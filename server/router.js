@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 });
 
 // create a POST route
-router.post("/post", (req, res) => {
+router.post("/", (req, res) => {
   console.log(req.body.email);
 
   var data = {
