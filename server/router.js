@@ -22,9 +22,9 @@ router.post("/", (req, res) => {
 
   mailgun.messages().send(data, function(error, body) {
     if (error) {
-      console.log(error);
+      res.send(error);
     } else {
-      console.log(body);
+      res.send(body);
     }
   });
 });
