@@ -19,7 +19,7 @@ class Contact extends Component {
     if (this.state.isLoading !== prevState.isLoading) {
       if (this.state.isLoading) {
         const { name, email, subject, message } = this.state;
-        axios.post("/express_backend", {
+        axios.post("https://portfolio-by-as.herokuapp.com", {
           name,
           email,
           subject,
