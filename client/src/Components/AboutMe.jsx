@@ -40,8 +40,8 @@ const AboutMe = () => {
                 I primarly use <b>React</b>, but picking up a new framework or
                 language isn't a problem. I have a good programming experience
                 and I'm confortable developing on the frontend or backend.
-                <br></br> I have diverse set of skills,ranging from HTML + CSS +
-                JS, to React, all the way to ASP.NET and SQL.
+                <br></br> I have diverse set of skills, ranging from HTML + CSS
+                + JS, to React, all the way to ASP.NET and SQL.
               </p>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>

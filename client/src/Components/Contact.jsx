@@ -133,7 +133,7 @@ class Contact extends Component {
                 <ScrollAnimation animateIn="fadeInUp" delay="150" animateOnce>
                   <li>
                     <span class="text-uppercase">Email</span>
-                    AliShadman955@gmail.com
+                    alishadman955@gmail.com
                   </li>
                 </ScrollAnimation>
                 <ScrollAnimation animateIn="fadeInUp" delay="200" animateOnce>

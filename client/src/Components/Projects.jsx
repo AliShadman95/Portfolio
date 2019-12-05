@@ -50,8 +50,8 @@ const Projects = () => {
                     url="https://letschaaat.netlify.com"
                   />
                 </div>
-                <div>
-                  <Project
+                {/* <div>
+                   <Project
                     img={placeholderProjectImage}
                     title="Work in progress!"
                     text="Work in progress!"
@@ -69,7 +69,7 @@ const Projects = () => {
                     gitLink="https://google.com"
                     url="https://google.com"
                   />
-                </div>
+                </div> */}
               </Slider>
             </ScrollAnimation>
           </div>
