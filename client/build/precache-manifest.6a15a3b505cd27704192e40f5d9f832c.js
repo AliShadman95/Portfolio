@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83c82e44e45dedbc950cc1abdd473c36",
+    "revision": "b02caaef9cbbe84e9c7a7fc15c5ff27d",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.8bf49afd.chunk.css"
   },
   {
-    "revision": "0ffd027c690391b43e0f",
+    "revision": "dda4c06d4354bcddfd88",
     "url": "/static/css/main.d5f53a87.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.42e5773b.chunk.js"
   },
   {
-    "revision": "0ffd027c690391b43e0f",
-    "url": "/static/js/main.96f0d326.chunk.js"
+    "revision": "dda4c06d4354bcddfd88",
+    "url": "/static/js/main.82517ad0.chunk.js"
   },
   {
     "revision": "6bb5583fdf35008ebdb1",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/chatscreen.30b560ed.png"
   },
   {
-    "revision": "7fbc7a34e95f31e0b3755f1b27d2cfc9",
-    "url": "/static/media/cutmypic.7fbc7a34.png"
+    "revision": "617c9666e187cafe3267656d6eed4eba",
+    "url": "/static/media/pimg.617c9666.jpg"
   },
   {
     "revision": "64c192f262d924858e759edba38a391d",

@@ -43,7 +43,7 @@ const Projects = () => {
                     img={chatScreen}
                     title="Let's Chat!"
                     text="A Web Chat made with React, Redux, Material UI, Node JS, MongoDB and
-            Socket Io. It allows users to pick up an avatar, change rooms and
+            Socket Io. It allows users to chat, pick up an avatar, change rooms and
             search for specific messages."
                     shortText="A simple webchat"
                     gitLink="https://github.com/AliShadman95/cyf-chat-react"

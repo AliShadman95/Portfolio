@@ -1,5 +1,5 @@
 import React from "react";
-import pImage from "../Media/cutmypic.png";
+import pImage from "../Media/pimg.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 
@@ -88,8 +88,8 @@ const AboutMe = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "85%" }}
-                    aria-valuenow="85"
+                    style={{ width: "90%" }}
+                    aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   >
@@ -105,8 +105,8 @@ const AboutMe = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "83%" }}
-                    aria-valuenow="83"
+                    style={{ width: "86%" }}
+                    aria-valuenow="86"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   >
@@ -139,8 +139,8 @@ const AboutMe = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "91%" }}
-                    aria-valuenow="91"
+                    style={{ width: "84%" }}
+                    aria-valuenow="84"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   >

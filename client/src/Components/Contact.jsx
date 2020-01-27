@@ -145,9 +145,7 @@ class Contact extends Component {
                 <ScrollAnimation animateIn="fadeInUp" delay="250" animateOnce>
                   <li>
                     <span class="text-uppercase">Address</span>
-                    Rome, RM <br></br>
-                    CAP 00172 <br></br>
-                    Viale Alessandrino, 218
+                    Rome, RM
                   </li>
                 </ScrollAnimation>
               </ul>
