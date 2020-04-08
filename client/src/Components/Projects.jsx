@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import placeholderProjectImage from "../Media/workprog.png";
+import bankSimImg from "../Media/banksimimg.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 import chatScreen from "../Media/chatscreen.png";
@@ -16,7 +17,7 @@ var settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 };
 
 const Projects = () => {
@@ -42,12 +43,20 @@ const Projects = () => {
                   <Project
                     img={chatScreen}
                     title="Let's Chat!"
-                    text="A Web Chat made with React, Redux, Material UI, Node JS, MongoDB and
-            Socket Io. It allows users to chat, pick up an avatar, change rooms and
-            search for specific messages."
+                    text="A Web Chat made with React, Redux, Material UI, Node JS, MongoDB and  Socket Io. It allows users to chat, pick up an avatar, change rooms and search for specific messages."
                     shortText="A simple webchat"
                     gitLink="https://github.com/AliShadman95/cyf-chat-react"
                     url="https://letschaaat.netlify.com"
+                  />
+                </div>
+                <div>
+                  <Project
+                    img={bankSimImg}
+                    title="BankSim!"
+                    text="A bank simulator made with React, Redux, Material UI, Node JS, PostgreSQL where you can create users, banks, accounts and deposit, withdraw, transfer money and more!"
+                    shortText="A bank simulator"
+                    gitLink="https://github.com/AliShadman95/BankSim"
+                    url="https://banksim.netlify.com/"
                   />
                 </div>
                 {/* <div>

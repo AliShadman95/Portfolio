@@ -1,5 +1,5 @@
 import React from "react";
-import pImage from "../Media/pimg.jpg";
+import pImage from "../Media/Screenshot_5.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../node_modules/animate.css";
 
