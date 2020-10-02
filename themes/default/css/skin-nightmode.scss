@@ -1,0 +1,112 @@
+$primaryred: #ff0000;
+$secondaryred: #ff4909;
+$primaryblack: #000000;
+$secondaryblack: #0f0f0f;
+
+html,body {
+	background-color: $primaryblack;
+	color: #ffffff;
+}
+
+#ptkdev {
+	a.url {
+		color: $primaryred;
+		font-weight: bold;
+	}
+
+	a.url:hover {
+		color: $primaryred;
+		font-weight: bold;
+	}
+
+	.fa-home {
+		color: $primaryred;
+	}
+
+	.navbar-burger, .nav-logo-text {
+		color: #ffffff;
+	}
+
+	.navbar-menu {
+		background-color: $secondaryblack;
+	}
+
+	.cookielaw a.url {
+		color: $primaryred;
+		font-weight: normal;
+	}
+
+	.cookielaw a.url:hover {
+		color: $primaryred;
+		font-weight: normal;
+	}
+
+	.color-text {
+		color: $primaryred;
+	}
+
+	.color-text:hover {
+		color: $primaryred;
+	}
+
+	.color-text-light {
+		color: $secondaryred;
+	}
+
+	.color-text-light:hover {
+		color: $secondaryred;
+	}
+
+	.navbar {
+		border-bottom: 1px solid $primaryred;
+	}
+
+	.color-background, .color-background-footer {
+		background-color: $secondaryblack;
+	}
+
+	a.color-background:hover {
+		background-color: $secondaryblack;
+	}
+
+	.navbar-link:not(.is-arrowless)::after {
+		border-color: $primaryred;
+	}
+
+	.link-animate::before{
+		background-color: $primaryred;
+	}
+
+	.link-animate:hover, .link-animate:visited, .link-animate:focus{
+		background-color: $secondaryblack;
+	}
+
+	.logo-bg a {
+		color: #ffffff;
+	}
+
+	.navbar-start a {
+		color: #ffffff;
+	}
+
+	.cookielaw {
+		background-color: $secondaryblack;
+	}
+
+	.cookie-dismiss.url, .cookie-dismiss.url:hover {
+	    background-color: #ffffff;
+	}
+
+	.is-theme-navbar {
+		border-color: $primaryblack;
+		background-color: $primaryblack;
+	}
+
+	.menu-icon-wrapper {
+		svg {
+			path {
+				stroke: #ffffff;
+			}
+		}
+	}
+}

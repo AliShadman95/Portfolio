@@ -1,0 +1,124 @@
+$primarywhite: #ffffff;
+$secondarywhite: ghostwhite;
+$primaryblue: #46aef7;
+$secondaryblue: #006699;
+
+html,body {
+	background-color: #46aef7 /*radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%)*/;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	color: #ffffff;
+}
+
+#ptkdev {
+	a.url {
+		color: $secondaryblue;
+		font-weight: bold;
+	}
+
+	a.url:hover {
+		color: $secondaryblue;
+		font-weight: bold;
+	}
+
+	.navbar-burger {
+		color: $primaryblue;
+	}
+
+	footer a.url {
+		color: $primarywhite;
+	}
+
+	footer a.url:hover {
+		color: $primarywhite;
+	}
+
+	.color-text {
+		color: $primarywhite;
+	}
+
+	.color-text:hover {
+		color: $secondaryblue;
+	}
+
+	.color-text-light {
+		color: $primaryblue;
+	}
+
+	.color-text-light:hover {
+		color: $primaryblue;
+	}
+
+	.navbar {
+		background-color: $primarywhite;
+		border-bottom: 1px solid $secondaryblue;
+	}
+
+	.color-background {
+		background-color: $primarywhite;
+	}
+
+	a.color-background:hover {
+		background-color: $primarywhite;
+	}
+
+	.color-background-footer {
+		background-color: $primaryblue;
+	}
+	.is-theme-border{
+		border-color: $primaryblue;
+	}
+
+	.navbar-link:not(.is-arrowless)::after {
+		border-color: $secondaryblue;
+	}
+
+	.link-animate::before{
+		background-color: $secondaryblue;
+	}
+
+	a.link-animate {
+		color: $secondaryblue;
+	}
+
+	a.link-animate:hover::before{
+		background-color: $secondaryblue;
+	}
+
+	.logo-bg a {
+		color: $primarywhite;
+	}
+
+	.cookielaw {
+		color: $secondaryblue;
+		background-color: $primarywhite;
+	}
+
+	.cookielaw .cookie-dismiss {
+		color: $primarywhite;
+		background-color: $primaryblue;
+	}
+
+	.cookielaw .cookie-dismiss.url{
+		color: $primarywhite;
+		background-color: $primaryblue;
+	}
+
+	.is-theme-navbar {
+		border-color: $primarywhite;
+		background-color: $primarywhite;
+	}
+
+	.content table td, .content table th {
+		border-color: $secondaryblue;
+	}
+
+	.menu-icon-wrapper {
+		svg {
+			path {
+				stroke: $primaryblue;
+			}
+		}
+	}
+}

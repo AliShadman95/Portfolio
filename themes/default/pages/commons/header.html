@@ -1,0 +1,136 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="default-style" content="{% if 'nightmode' == cookie.style %}nightmode{% else %}default{% endif %}">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>{{ page.title }} | {{ translate.title }}</title>
+	<meta name="description" content="{{ page.description }}"/>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	{% if 'enabled' == config.site.pingback %}<link rel="pingback" href="{{ config.site.fullurl }}/xmlrpc" />{% endif %}
+
+	<!-- DNS CACHE -->
+	{% for cdn in config.site.dns_prefetch %}
+	<link rel="dns-prefetch" href="{{ cdn }}"/>
+	{% endfor %}
+
+	<!-- {{ translate.title }} -->
+	<meta name="author" content="{{ config.site.author }}" />
+	<meta name="author-mail" content="{{ config.site.email }}" />
+	<meta name="revisit-after" content="6 hours" />
+	<meta name="rating" content="general" />
+	<meta name="language" content="{{ config.system.language }}" />
+	<meta name="hostname" content="{{ config.site.url }}">
+
+	<!-- Translations -->
+	{% for lang in config.site.mui.languages %}
+	<link rel="alternate" hreflang="{{ lang.lang }}" href="{{ lang.url }}{{ page.url }}" />
+	{% endfor %}
+	<link rel="canonical" href="{{ config.site.fullurl }}{{ page.url }}" />
+
+	<!-- PWA -->
+	{% if 'enabled' == config.site.pwa.status %}<link rel="manifest" href="{{ config.site.fullurl }}/manifest.webmanifest">{% endif %}
+
+    <!-- Google Webmaster -->
+    <meta name="google-site-verification" content="{{ config.services.google.webmaster_id }}"/>
+    <meta name="google-analytics" content="{{ config.services.google.analytics_id }}">
+
+    <!-- Android -->
+    <meta name="theme-color" content="{% if 'nightmode' == cookie.style %}{{ config.site.pwa.colornightmode }}{% else %}{{ config.site.pwa.color }}{% endif %}">
+
+	<!-- Facebook -->
+	<meta property="fb:app_id"content="{{ config.services.facebook.app_id }}" />
+	<meta property="og:locale" content="{{ config.system.language }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{{ config.site.fullurl }}/img/screenshot/screen-1200x630.png" />
+	<meta property="og:site_name" content="{{ translate.title }}" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:url" content="{{ config.site.fullurl }}" />
+	<meta property="og:description" content="{{ page.description }}" />
+
+	<!-- Windows  -->
+	<meta name="msapplication-navbutton-color" content="{% if 'nightmode' == cookie.style %}{{ config.site.pwa.colornightmode }}{% else %}{{ config.site.pwa.color }}{% endif %}">
+	<meta name="msapplication-TileColor" content="{% if 'nightmode' == cookie.style %}{{ config.site.pwa.colornightmode }}{% else %}{{ config.site.pwa.color }}{% endif %}">
+	<meta name="msapplication-TileImage" content="{{ config.site.fullurl }}/img/icons/ms/icon-144x144.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ translate.title }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:creator" content="@{{ config.site.social.twitter }}" />
+    <meta name="twitter:image" content="{{ config.site.fullurl }}/img/screenshot/screen-1200x630.png" />
+
+    <!-- Apple -->
+    <meta name="apple-mobile-web-app-title" content="{{ page.title_pwa }}" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link rel="apple-touch-icon" type="image/png" href="{{ config.site.fullurl }}/img/icons/apple/icon-512x512.png" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+	<link rel="apple-touch-startup-image" href="{{ config.site.fullurl }}/img/icons/apple/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="{{ config.site.fullurl }}/favicon.ico" />
+	<link rel="icon" type="image/png" href="{{ config.site.fullurl }}/favicon.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ config.site.fullurl }}/img/icons/favicon/icon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ config.site.fullurl }}/img/icons/favicon/icon-32x32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="{{ config.site.fullurl }}/img/icons/favicon/icon-48x48.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="{{ config.site.fullurl }}/img/icons/android/icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="{{ config.site.fullurl }}/img/icons/android/icon-512x512.png">
+
+	<!-- CSS -->
+	<style>
+	/* latin-ext */
+	@font-face {
+	  font-family: 'Caveat Brush';
+	  font-style: normal;
+	  font-weight: 400;
+	  font-display: swap;
+	  src: local('Caveat Brush'), local('CaveatBrush-Regular'), url({{ config.site.fullurl }}/css/fonts/EYq0maZfwr9S9-ETZc3fKXt8UrOS43o.woff2) format('woff2');
+	  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	}
+	/* latin */
+	@font-face {
+	  font-family: 'Caveat Brush';
+	  font-style: normal;
+	  font-weight: 400;
+	  font-display: swap;
+	  src: local('Caveat Brush'), local('CaveatBrush-Regular'), url({{ config.site.fullurl }}/css/fonts/EYq0maZfwr9S9-ETZc3fKXt8XLOS.woff2) format('woff2');
+	  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+	/* latin-ext */
+	@font-face {
+	  font-family: 'Open Sans';
+	  font-style: normal;
+	  font-weight: 400;
+	  font-display: swap;
+	  src: local('Open Sans Regular'), local('OpenSans-Regular'), url({{ config.site.fullurl }}/css/fonts/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+	  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	}
+	/* latin */
+	@font-face {
+	  font-family: 'Open Sans';
+	  font-style: normal;
+	  font-weight: 400;
+	  font-display: swap;
+	  src: local('Open Sans Regular'), local('OpenSans-Regular'), url({{ config.site.fullurl }}/css/fonts/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+	  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="{{ config.site.fullurl }}/css/full.min.css?v={{ config.site.pwa.version }}" />
+	<link rel="stylesheet" type="text/css" href="{{ config.site.fullurl }}/css/skin-nightmode.min.css?v={{ config.site.pwa.version }}" title="nightmode" {% if 'default' == cookie.style %}disabled{% endif %} />
+	<link rel="stylesheet" type="text/css" href="{{ config.site.fullurl }}/css/skin-default.min.css?v={{ config.site.pwa.version }}" title="default" {% if 'nightmode' == cookie.style %}disabled{% endif %} />
+	<!-- Nightmode  -->
+	<meta name="nightmode" content="{% if 'nightmode' == cookie.style %}enable{% else %}disable{% endif %}" />
+
+	<style>
+	{% include 'css/skeleton.min.css' %}
+	</style>
+</head>
