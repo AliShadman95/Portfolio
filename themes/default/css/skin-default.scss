@@ -1,29 +1,35 @@
 $primarywhite: #ffffff;
 $secondarywhite: ghostwhite;
+$primaryred: #ff0000;
+$secondaryred: #ff4909;
 $primaryblue: #46aef7;
-$secondaryblue: #006699;
 
-html,body {
-	background-color: #46aef7 /*radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%)*/;
+html,
+body {
+	background-color: #46aef7
+		/*radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%)*/;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	color: #ffffff;
 }
 
-#ptkdev {
+#ashd {
 	a.url {
-		color: $secondaryblue;
+		color: $primaryred;
 		font-weight: bold;
+	}
+	.fa-home {
+		color: $primaryred;
 	}
 
 	a.url:hover {
-		color: $secondaryblue;
+		color: $primaryred;
 		font-weight: bold;
 	}
 
 	.navbar-burger {
-		color: $primaryblue;
+		color: $primaryred;
 	}
 
 	footer a.url {
@@ -39,20 +45,20 @@ html,body {
 	}
 
 	.color-text:hover {
-		color: $secondaryblue;
+		color: $primaryred;
 	}
 
 	.color-text-light {
-		color: $primaryblue;
+		color: $primaryred;
 	}
 
 	.color-text-light:hover {
-		color: $primaryblue;
+		color: $primaryred;
 	}
 
 	.navbar {
 		background-color: $primarywhite;
-		border-bottom: 1px solid $secondaryblue;
+		border-bottom: 1px solid $primaryred;
 	}
 
 	.color-background {
@@ -66,24 +72,24 @@ html,body {
 	.color-background-footer {
 		background-color: $primaryblue;
 	}
-	.is-theme-border{
-		border-color: $primaryblue;
+	.is-theme-border {
+		border-color: $primaryred;
 	}
 
 	.navbar-link:not(.is-arrowless)::after {
-		border-color: $secondaryblue;
+		border-color: $primaryred;
 	}
 
-	.link-animate::before{
-		background-color: $secondaryblue;
+	.link-animate::before {
+		background-color: $primaryred;
 	}
 
 	a.link-animate {
-		color: $secondaryblue;
+		color: $primaryred;
 	}
 
-	a.link-animate:hover::before{
-		background-color: $secondaryblue;
+	a.link-animate:hover::before {
+		background-color: $primaryred;
 	}
 
 	.logo-bg a {
@@ -91,18 +97,18 @@ html,body {
 	}
 
 	.cookielaw {
-		color: $secondaryblue;
+		color: $primaryred;
 		background-color: $primarywhite;
 	}
 
 	.cookielaw .cookie-dismiss {
 		color: $primarywhite;
-		background-color: $primaryblue;
+		background-color: $primaryred;
 	}
 
-	.cookielaw .cookie-dismiss.url{
+	.cookielaw .cookie-dismiss.url {
 		color: $primarywhite;
-		background-color: $primaryblue;
+		background-color: $primaryred;
 	}
 
 	.is-theme-navbar {
@@ -110,15 +116,20 @@ html,body {
 		background-color: $primarywhite;
 	}
 
-	.content table td, .content table th {
-		border-color: $secondaryblue;
+	.content table td,
+	.content table th {
+		border-color: $primaryred;
 	}
 
 	.menu-icon-wrapper {
 		svg {
 			path {
-				stroke: $primaryblue;
+				stroke: $primaryred;
 			}
 		}
+	}
+
+	.footer-txt {
+		color: $primaryred;
 	}
 }

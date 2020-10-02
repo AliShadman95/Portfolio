@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ config.system.language }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-{% set page = {
-		url: "/offline",
-		title: translate.offline,
-		description: translate.offline
-	}
-%}
-{% include 'pages/commons/header.html' %}
+<html
+	lang="{{ config.system.language }}"
+	prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+	{% set page = { url: "/offline", title: translate.offline, description:
+	translate.offline } %} {% include 'pages/commons/header.html' %}
 
-<body id="ptkdev" itemscope itemtype="http://schema.org/WebPage">
+	<body id="ashd" itemscope itemtype="http://schema.org/WebPage">
+		<div id="particles-js"></div>
 
-	{% include "pages/commons/menu.html" %}
-	<div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div>
-	<div class="container">
-		{% include "pages/offline/content.html" %}
+		{% include "pages/commons/menu.html" %}
 
-		{% include "pages/commons/modals.html" %}
-	</div>
-	{% include "pages/commons/footer.html" %}
-	<script defer src="{{ config.site.fullurl }}/js/full.min.js?v={{ config.site.pwa.version }}"></script>
-	{% include "pages/commons/services.html" %}
-
-</body>
+		<div class="container">{% include "pages/offline/content.html" %}</div>
+		{% include "pages/commons/footer.html" %}
+		<script
+			defer
+			src="{{ config.site.fullurl }}/js/full.min.js?v={{ config.site.pwa.version }}"
+		></script>
+		{% include "pages/commons/services.html" %}
+	</body>
 </html>

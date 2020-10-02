@@ -1,19 +1,22 @@
-#ptkdev {
+#ashd {
+	.container {
+		position: static;
+	}
 	.is-patreon {
-		background-color: #F96753;
-		color: #052A49;
+		background-color: #f96753;
+		color: #052a49;
 	}
 
 	.fa-patreon {
-		color: #052A49;
+		color: #052a49;
 	}
 
 	.fa-patreon2 {
-		color: #F96753;
+		color: #f96753;
 	}
 
 	.patreon-backers-background {
-		background-color: rgba(249,103,83, 0.9);
+		background-color: rgba(249, 103, 83, 0.9);
 		border-radius: 25px;
 	}
 
@@ -27,11 +30,11 @@
 	}
 
 	.fa-sun {
-		color: #F1C40F;
+		color: #f1c40f;
 	}
 
 	.fa-moon {
-		color: #2C3E50;
+		color: #2c3e50;
 	}
 
 	.fa-home {
@@ -39,11 +42,11 @@
 	}
 
 	.fa-palette {
-		color: #8E44AD;
+		color: #8e44ad;
 	}
 
 	.fa-chrome {
-		color: #27AE60;
+		color: #27ae60;
 	}
 
 	.fa-mail {
@@ -63,7 +66,7 @@
 	}
 
 	.fa-whatsapp {
-		color: #075E54;
+		color: #075e54;
 	}
 
 	.fa-puzzle-piece {
@@ -71,35 +74,35 @@
 	}
 
 	.fa-donate {
-		color: #F1C40F;
+		color: #f1c40f;
 	}
 
 	.fa-bitcoin {
-		color: #F7931A;
+		color: #f7931a;
 	}
 
 	.fa-ethereum {
-		color: #3C599F;
+		color: #3c599f;
 	}
 
 	.fa-paypal {
-		color: #253B80;
+		color: #253b80;
 	}
 
 	.fa-download {
-		color: #2C3E50;
+		color: #2c3e50;
 	}
 
 	.fa-telegram-plane {
-		color: #0088CC;
+		color: #0088cc;
 	}
 
 	.fa-discord {
-		color: #7289DA;
+		color: #7289da;
 	}
 
 	.fa-comment {
-		color: #00D549;
+		color: #00d549;
 	}
 
 	.fa-user-secret {
@@ -107,19 +110,19 @@
 	}
 
 	.fa-cookie-bite {
-		color: #51352D;
+		color: #51352d;
 	}
 
 	.fa-life-ring {
-		color: #F7591A;
+		color: #f7591a;
 	}
 
 	.fa-globe-americas {
-		color: #007FBC;
+		color: #007fbc;
 	}
 
 	.fa-envelope {
-		color: #DD4A40;
+		color: #dd4a40;
 	}
 
 	.fa-flag-usa {
@@ -150,5 +153,4 @@
 	.logo-bg a {
 		font-size: 24px;
 	}
-
 }

@@ -6,7 +6,7 @@
 }
 
 .socials::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
@@ -33,7 +33,7 @@
 }
 
 .social-icon::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -45,7 +45,7 @@
 }
 
 .social-icon::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -111,30 +111,30 @@
 }
 
 .social-icon-telegram::after {
-	background: #0088CC;
+	background: #0088cc;
 }
 
 .social-icon-telegram,
 .social-icon-telegram:hover {
-	color: #0088CC;
+	color: #0088cc;
 }
 
 .social-icon-discord::after {
-	background: #7289DA;
+	background: #7289da;
 }
 
 .social-icon-discord,
 .social-icon-discord:hover {
-	color: #7289DA;
+	color: #7289da;
 }
 
 .social-icon-whatsapp,
 .social-icon-whatapp:hover {
-	color: #075E54;
+	color: #075e54;
 }
 
 .social-icon-whatsapp::after {
-	background: #075E54;
+	background: #075e54;
 }
 
 .social-icon-github::after {
@@ -161,7 +161,48 @@
 }
 
 .social-icon-instagram::after {
-	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+	background: radial-gradient(
+			circle farthest-corner at 35% 90%,
+			#fec564,
+			transparent 50%
+		),
+		radial-gradient(
+			circle farthest-corner at 0 140%,
+			#fec564,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 0 -25%,
+			#5258cf,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 20% -50%,
+			#5258cf,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 100% 0,
+			#893dc2,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 60% -20%,
+			#893dc2,
+			transparent 50%
+		),
+		radial-gradient(
+			ellipse farthest-corner at 100% 100%,
+			#d9317a,
+			transparent
+		),
+		linear-gradient(
+			#6559ca,
+			#bc318f 30%,
+			#e33f5f 50%,
+			#f77638 70%,
+			#fec66d 100%
+		);
 }
 
 @-moz-keyframes bubble {

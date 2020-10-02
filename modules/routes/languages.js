@@ -9,7 +9,6 @@
  *
  */
 module.exports = {
-	"en": require("../../translations/en"),
-	"it": require("../../translations/it"),
-	"pl": require("../../translations/pl")
+	en: require("../../translations/en"),
+	it: require("../../translations/it"),
 };

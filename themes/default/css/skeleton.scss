@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
@@ -7,12 +8,12 @@ html, body{
 body {
 	height: 100%;
 	width: 100%;
-    overflow: hidden;
-    font-size: 18px;
-    font-family: 'Caveat Brush', cursive;
+	overflow: hidden;
+	font-size: 18px;
+	font-family: "Caveat Brush", cursive;
 }
 
-#ptkdev {
+#ashd {
 	.svg {
 		width: 26px;
 		max-width: 24px;
@@ -64,22 +65,22 @@ body {
 		padding: 10px;
 		z-index: 15;
 		font-size: 1em;
-		font-family: 'Open Sans', sans-serif;
+		font-family: "Open Sans", sans-serif;
 	}
 
 	.cookie-dismiss {
-	    padding: 3px 8px;
-	    border-radius: 5%;
+		padding: 3px 8px;
+		border-radius: 5%;
 	}
 
-	#particlesjs {
+	#particles-js {
 		width: 100%;
-    	height: 99%;
+		height: 99%;
 		position: absolute;
 		z-index: 0;
 	}
 
-	#particlesjs .particles-js-canvas-el {
+	#particles-js .particles-js-canvas-el {
 		z-index: -1;
 	}
 
@@ -98,22 +99,21 @@ body {
 		opacity: 0.8;
 	}
 
-	.patryk-rzucidlo-ptkdev {
-	    width: 150px;
-	    height: 150px;
-	    border-radius: 50%;
-	    transition: background-image 0.8s ease-in-out;
-	    background-size: 150px 150px;
-	    background-image:url("/img/ptkdev_patryk_rzucidlo_avatar.png");
+	.ali-shadman-ashd {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		transition: background-image 0.8s ease-in-out;
+		background-size: 150px 150px;
+		background-image: url("/img/ashd_ali_shadman_avatar2.jpg");
 	}
 
-	.patryk-rzucidlo-ptkdev:hover  {
-	    width: 150px;
-	    height: 150px;
-	    border-radius: 50%;
-	    background-size: 150px 150px;
-	    background-image:url("/img/ptkdev_patryk_rzucidlo_real.png");
-
+	.ali-shadman-ashd:hover {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background-size: 150px 150px;
+		background-image: url("/img/ashd_ali_shadman_real.png");
 	}
 
 	.content .titleh1 {
@@ -144,7 +144,7 @@ body {
 
 	.content .subtitle-patreon {
 		font-size: 1.4rem;
-		color: #052A49;
+		color: #052a49;
 	}
 
 	.content strong {
@@ -163,18 +163,23 @@ body {
 		display: none;
 	}
 
-	.button-transparent{
+	.button-transparent {
 		background-color: transparent;
 		border-color: transparent;
 	}
 
 	.content.font-normal {
-		font-family: 'Open Sans', sans-serif;
+		font-family: "Open Sans", sans-serif;
 		font-size: 1em;
 	}
 
-	.content.font-normal h1, .content.font-normal h2, .content.font-normal h3 {
-		font-family: 'Caveat Brush', cursive;
+	.content.font-normal h1,
+	.content.font-normal h2,
+	.content.font-normal h3 {
+		font-family: "Caveat Brush", cursive;
 	}
 
+	.gh-icon {
+		padding-left: 15px;
+	}
 }

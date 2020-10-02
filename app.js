@@ -14,8 +14,10 @@
  *
  */
 const argv = require("yargs").argv;
-const config = (argv.config ? require(argv.config) : require("./configs/config.js"));
-const Ptkdev = require("./modules/core/main");
+const config = argv.config
+	? require(argv.config)
+	: require("./configs/config.js");
+const ASHD = require("./modules/core/main");
 
 /**
  * Start the app
@@ -23,6 +25,6 @@ const Ptkdev = require("./modules/core/main");
  * Run
  *
  */
-let ptkdev = new Ptkdev(config);
-ptkdev.init();
-ptkdev.start();
+let ashd = new ASHD(config);
+ashd.init();
+ashd.start();

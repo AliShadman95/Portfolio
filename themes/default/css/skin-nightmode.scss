@@ -1,29 +1,31 @@
-$primaryred: #ff0000;
-$secondaryred: #ff4909;
+$primaryblue: #46aef7;
+$secondaryblue: #006699;
 $primaryblack: #000000;
 $secondaryblack: #0f0f0f;
 
-html,body {
+html,
+body {
 	background-color: $primaryblack;
 	color: #ffffff;
 }
 
-#ptkdev {
+#ashd {
 	a.url {
-		color: $primaryred;
+		color: $primaryblue;
 		font-weight: bold;
 	}
 
 	a.url:hover {
-		color: $primaryred;
+		color: $primaryblue;
 		font-weight: bold;
 	}
 
 	.fa-home {
-		color: $primaryred;
+		color: $primaryblue;
 	}
 
-	.navbar-burger, .nav-logo-text {
+	.navbar-burger,
+	.nav-logo-text {
 		color: #ffffff;
 	}
 
@@ -32,36 +34,37 @@ html,body {
 	}
 
 	.cookielaw a.url {
-		color: $primaryred;
+		color: $primaryblue;
 		font-weight: normal;
 	}
 
 	.cookielaw a.url:hover {
-		color: $primaryred;
+		color: $primaryblue;
 		font-weight: normal;
 	}
 
 	.color-text {
-		color: $primaryred;
+		color: $primaryblue;
 	}
 
 	.color-text:hover {
-		color: $primaryred;
+		color: $primaryblue;
 	}
 
 	.color-text-light {
-		color: $secondaryred;
+		color: $secondaryblue;
 	}
 
 	.color-text-light:hover {
-		color: $secondaryred;
+		color: $secondaryblue;
 	}
 
 	.navbar {
-		border-bottom: 1px solid $primaryred;
+		border-bottom: 1px solid $primaryblue;
 	}
 
-	.color-background, .color-background-footer {
+	.color-background,
+	.color-background-footer {
 		background-color: $secondaryblack;
 	}
 
@@ -70,14 +73,16 @@ html,body {
 	}
 
 	.navbar-link:not(.is-arrowless)::after {
-		border-color: $primaryred;
+		border-color: $primaryblue;
 	}
 
-	.link-animate::before{
-		background-color: $primaryred;
+	.link-animate::before {
+		background-color: $primaryblue;
 	}
 
-	.link-animate:hover, .link-animate:visited, .link-animate:focus{
+	.link-animate:hover,
+	.link-animate:visited,
+	.link-animate:focus {
 		background-color: $secondaryblack;
 	}
 
@@ -93,8 +98,9 @@ html,body {
 		background-color: $secondaryblack;
 	}
 
-	.cookie-dismiss.url, .cookie-dismiss.url:hover {
-	    background-color: #ffffff;
+	.cookie-dismiss.url,
+	.cookie-dismiss.url:hover {
+		background-color: #ffffff;
 	}
 
 	.is-theme-navbar {
@@ -108,5 +114,9 @@ html,body {
 				stroke: #ffffff;
 			}
 		}
+	}
+
+	.footer-txt {
+		color: $primaryblue;
 	}
 }
