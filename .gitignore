@@ -111,7 +111,6 @@ npm-debug.log
 # App #
 #######
 plugins/*/
-configs/*.js
 themes/default/js/vendor/
 themes/default/css/vendor/
 themes/default/js/*.min.js
