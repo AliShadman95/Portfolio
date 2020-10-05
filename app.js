@@ -1,16 +1,16 @@
 /**
- * Ptkdev
+ * ASHD
  * =====================
- * Portfolio di Patryk Rzucidlo (PTKDev)
+ * Portfolio di Ali Shadman (ASHD)
  *
- * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
+ *
  *
  * @license: MIT License
  *
- * @link:    Homepage: https://ptk.dev
- *           Docs:     https://ptk.dev/README.md
- *           NPM:      https://npmjs.com/package/@ptkdevio/ptkdev
- *           GitHub:   https://github.com/ptkdev/ptkdev
+ * @link:    Homepage: https://ashd.dev
+ *
+ *
+ *
  *
  */
 const argv = require("yargs").argv;

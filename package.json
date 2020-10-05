@@ -1,23 +1,11 @@
 {
-	"name": "ptkdev-portfolio-it",
-	"description": "PTKDev Portfolio",
+	"name": "ashd-portfolio-it",
+	"description": "ASHD Portfolio",
 	"version": "0.5.0",
 	"main": "modules/core/lib.js",
-	"author": "Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)",
+	"author": "Ali Shadman [@ashd95] <alishadman955@gmail.io> (https://ashd.dev)",
 	"license": "MIT",
-	"homepage": "https://ptk.dev",
-	"donate": {
-		"patreon": "http://patreon.ptkdev.io",
-		"paypal": "http://paypal.ptkdev.io",
-		"ko-fi": "http://coffee.ptkdev.io"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ptkdev/ptkdev.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ptkdev/ptkdev/issues"
-	},
+	"homepage": "https://ashd.dev",
 	"scripts": {
 		"start": "gulp build-static && node app.js --config=\"./configs/config.js\"",
 		"prod": "gulp build-static && npm run start-pm2",
@@ -30,8 +18,6 @@
 		"vendor": "cpy node_modules/cash-dom/dist/cash.min.js themes/default/js/vendor/cash-dom/ && cpy node_modules/bulma/css/bulma.min.css themes/default/css/vendor/bulma/ && cpy node_modules/vanilla-lazyload/dist/lazyload.min.js themes/default/js/vendor/lazyload/ && cpy node_modules/particlesjs/dist/particles.min.js themes/default/js/vendor/particles.js/",
 		"lint": "eslint ./ --cache --ignore-pattern .gitignore",
 		"lint-fix": "eslint ./ --cache --ignore-pattern .gitignore --fix --rule 'snakecasejs/snakecasejs: off'",
-		"git-set-upstream": "git remote add upstream git@github.com:ptkdev/ptkdev.git && git fetch upstream",
-		"git-pull-upstream": "git pull upstream master && git pull upstream beta && git pull upstream nightly",
 		"git-switch-master": "git checkout master && git pull --recursive",
 		"git-switch-beta": "git checkout beta && git pull --recursive",
 		"git-switch-nightly": "git checkout nightly && git pull --recursive",

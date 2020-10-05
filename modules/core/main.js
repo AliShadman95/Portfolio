@@ -23,7 +23,7 @@ const Utils = require("./../commons/utils");
 const Translate = require("./../commons/translate");
 const Pages = require("./../routes/pages");
 
-class Ptkdev {
+class Ashd {
 	constructor(config) {
 		this.core = core;
 		this.core.app = express();
@@ -55,21 +55,21 @@ class Ptkdev {
 		this.core.config = this.utils.fix_config(this.core.config);
 
 		nunjucks.configure(`./themes/${this.core.config.site.theme}/`, {
-		    autoescape: false,
-		    express: this.core.app
+			autoescape: false,
+			express: this.core.app,
 		});
 
 		this.core.app.use(cookie_parser());
 
 		// @credits: Akseli Palén
 		// @link: https://stackoverflow.com/questions/13442377/redirect-all-trailing-slashes-globally-in-express
-		this.core.app.use(function(req, res, next) {
-		    if (req.path.substr(-1) === "/" && req.path.length > 1) {
-		        let query = req.url.slice(req.path.length);
-		        res.redirect(301, req.path.slice(0, -1) + query);
-		    } else {
-		        next();
-		    }
+		this.core.app.use(function (req, res, next) {
+			if (req.path.substr(-1) === "/" && req.path.length > 1) {
+				let query = req.url.slice(req.path.length);
+				res.redirect(301, req.path.slice(0, -1) + query);
+			} else {
+				next();
+			}
 		});
 
 		this.static.static_files();
@@ -93,7 +93,6 @@ class Ptkdev {
 		this.pages_policy.cookie();
 		this.pages.backers();
 		this.pages.error_404();
-
 	}
 
 	/**
@@ -108,4 +107,4 @@ class Ptkdev {
 	}
 }
 
-module.exports = Ptkdev;
+module.exports = Ashd;

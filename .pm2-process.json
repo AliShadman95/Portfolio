@@ -1,7 +1,6 @@
 {
-	"name": "ptkdev-portfolio-it",
+	"name": "ashd-portfolio-it",
 	"script": "app.js",
-	"watch": true,
 	"max_restarts": 999,
 	"max_memory_restart": "1024M",
 	"instances" : "max",
