@@ -6,16 +6,7 @@ function Homepage() {
       <section className="section content-padding">
         <div className="content has-text-centered">
           <header>
-            <br />
-
             <div className="ali-shadman-ashd has-text-centered"></div>
-
-            <img
-              style={{ display: "none" }}
-              className="cache"
-              src="/img/ashd_ali_shadman_real.png"
-              alt="ali real"
-            />
           </header>
           <article>
             <h1 className="titleh1">Ali Shadman</h1>

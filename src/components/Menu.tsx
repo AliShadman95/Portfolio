@@ -1,6 +1,11 @@
-import React from "react";
+import React, { Dispatch } from "react";
 
-function Menu() {
+interface Props {
+  setSelectedSkin: Dispatch<React.SetStateAction<string>>;
+  selectedSkin: string;
+}
+
+function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
   return (
     <nav
       className="navbar is-fullwidth color-background"
@@ -9,7 +14,7 @@ function Menu() {
     >
       <div className="navbar-brand">
         <a
-          href="//localhost:3003/"
+          href="/"
           data-url="/"
           className="link navbar-item link-animate nav-logo-text color-background"
         >
@@ -175,6 +180,12 @@ function Menu() {
                 id="set-skin-default"
                 className="navbar-item link-animate"
                 href="#menu"
+                onClick={(): void => {
+                  if (selectedSkin !== "default") {
+                    setSelectedSkin("default");
+                    localStorage.setItem("TYPE_OF_THEME", "default");
+                  }
+                }}
               >
                 <svg
                   aria-hidden="true"
@@ -198,6 +209,12 @@ function Menu() {
                 id="set-skin-nightmode"
                 className="navbar-item link-animate"
                 href="#menu"
+                onClick={(): void => {
+                  if (selectedSkin !== "nightmode") {
+                    setSelectedSkin("nightmode");
+                    localStorage.setItem("TYPE_OF_THEME", "nightmode");
+                  }
+                }}
               >
                 <svg
                   aria-hidden="true"
@@ -246,8 +263,8 @@ function Menu() {
 
             <div className="navbar-dropdown is-theme-navbar">
               <a
-                href="//localhost:3003/policy/cookie"
-                data-url="/policy/cookie"
+                href="/cookie"
+                data-url="/cookie"
                 className="link navbar-item link-animate"
               >
                 <svg
@@ -269,8 +286,8 @@ function Menu() {
                 Cookie Policy
               </a>
               <a
-                href="//localhost:3003/policy/privacy"
-                data-url="/policy/privacy"
+                href="/privacy"
+                data-url="/privacy"
                 className="link navbar-item link-animate"
               >
                 <svg
@@ -314,7 +331,7 @@ function Menu() {
                 </svg>
                 Supporto
               </a>
-              <a
+              {/*     <a
                 href="//localhost:3003/?refresh=pwa"
                 data-url="/refresh"
                 className="link navbar-item link-animate"
@@ -336,7 +353,7 @@ function Menu() {
                   ></path>
                 </svg>
                 v0.5.0
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -418,7 +435,7 @@ function Menu() {
             </div>
             <div className="buttons">
               <a
-                href="https://cv.ptkdev.it"
+                href="https://cv.ashd.dev"
                 rel="nofollow external noopener noreferrer"
                 target="_new"
                 className="button is-gray is-github"

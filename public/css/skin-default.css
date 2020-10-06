@@ -1,0 +1,100 @@
+html,
+body {
+  background-color: #46aef7;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #ffffff;
+}
+
+#ashd a.url {
+  color: #ff0000;
+  font-weight: bold;
+}
+#ashd .fa-home {
+  color: #ff0000;
+}
+#ashd a.url:hover {
+  color: #ff0000;
+  font-weight: bold;
+}
+#ashd .navbar-burger {
+  color: #ff0000;
+}
+#ashd footer a.url {
+  color: #ffffff;
+}
+#ashd footer a.url:hover {
+  color: #ffffff;
+}
+#ashd .color-text {
+  color: #ffffff;
+}
+#ashd .color-text:hover {
+  color: #ff0000;
+}
+#ashd .color-text-light {
+  color: #ff0000;
+}
+#ashd .color-text-light:hover {
+  color: #ff0000;
+}
+#ashd .navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ff0000;
+}
+#ashd .color-background {
+  background-color: #ffffff;
+}
+#ashd a.color-background:hover {
+  background-color: #ffffff;
+}
+#ashd .color-background-footer {
+  background-color: #46aef7;
+}
+#ashd .is-theme-border {
+  border-color: #ff0000;
+}
+#ashd .navbar-link:not(.is-arrowless)::after {
+  border-color: #ff0000;
+}
+#ashd .link-animate::before {
+  background-color: #ff0000;
+}
+#ashd a.link-animate {
+  color: #ff0000;
+}
+#ashd a.link-animate:hover::before {
+  background-color: #ff0000;
+}
+#ashd .logo-bg a {
+  color: #ffffff;
+}
+#ashd .cookielaw {
+  color: #ff0000;
+  background-color: #ffffff;
+}
+#ashd .cookielaw .cookie-dismiss {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+#ashd .cookielaw .cookie-dismiss.url {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+#ashd .is-theme-navbar {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+#ashd .content table td,
+#ashd .content table th {
+  border-color: #ff0000;
+}
+#ashd .menu-icon-wrapper svg path {
+  stroke: #ff0000;
+}
+#ashd .footer-txt {
+  color: #ff0000;
+}
+
+/*# sourceMappingURL=skin-default.css.map */

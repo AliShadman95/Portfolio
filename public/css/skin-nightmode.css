@@ -1,0 +1,90 @@
+html,
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#ashd a.url {
+  color: #46aef7;
+  font-weight: bold;
+}
+#ashd a.url:hover {
+  color: #46aef7;
+  font-weight: bold;
+}
+#ashd .fa-home {
+  color: #46aef7;
+}
+#ashd .navbar-burger,
+#ashd .nav-logo-text {
+  color: #ffffff;
+}
+#ashd .navbar-menu {
+  background-color: #0f0f0f;
+}
+#ashd .cookielaw a.url {
+  color: #46aef7;
+  font-weight: normal;
+}
+#ashd .cookielaw a.url:hover {
+  color: #46aef7;
+  font-weight: normal;
+}
+#ashd .color-text {
+  color: #46aef7;
+}
+#ashd .color-text:hover {
+  color: #46aef7;
+}
+#ashd .color-text-light {
+  color: #006699;
+}
+#ashd .color-text-light:hover {
+  color: #006699;
+}
+#ashd .navbar {
+  border-bottom: 1px solid #46aef7;
+}
+#ashd .color-background,
+#ashd .color-background-footer {
+  background-color: #0f0f0f;
+}
+#ashd a.color-background:hover {
+  background-color: #0f0f0f;
+}
+#ashd .navbar-link:not(.is-arrowless)::after {
+  border-color: #46aef7;
+}
+#ashd .link-animate::before {
+  background-color: #46aef7;
+}
+#ashd .link-animate:hover,
+#ashd .link-animate:visited,
+#ashd .link-animate:focus {
+  background-color: #0f0f0f;
+}
+#ashd .logo-bg a {
+  color: #ffffff;
+}
+#ashd .navbar-start a {
+  color: #ffffff;
+}
+#ashd .cookielaw {
+  background-color: #0f0f0f;
+}
+#ashd .cookie-dismiss.url,
+#ashd .cookie-dismiss.url:hover {
+  background-color: #ffffff;
+}
+#ashd .is-theme-navbar {
+  border-color: #000000;
+  background-color: #000000;
+}
+#ashd .menu-icon-wrapper svg path {
+  stroke: #ffffff;
+}
+#ashd .footer-txt {
+  color: #46aef7;
+}
+
+/*# sourceMappingURL=skin-nightmode.css.map */
