@@ -11,6 +11,7 @@
     "@types/react": "^16.9.50",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.1.0",
+    "cpy-cli": "^3.1.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -22,7 +23,10 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "start": "node utils/replace-env-lang.js && npm run compile-scss && react-scripts start",
+    "start": "npm run start-cpy-html && node utils/replace-env-lang.js it development && npm run compile-scss && react-scripts start",
+    "start-en": "npm run start-cpy-html-en && node utils/replace-env-lang.js en development && npm run compile-scss && react-scripts start",
+    "start-cpy-html": "cpy public/index-dev.html public/ --rename=index.html",
+    "start-cpy-html-en": "cpy public/index-dev-en.html public/ --rename=index.html",
     "compile-scss": "sass ./public/css/skin-default.scss ./public/css/skin-default.css && sass ./public/css/skin-nightmode.scss ./public/css/skin-nightmode.css",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -2,24 +2,38 @@ const fs = require("fs");
 // First I want to read the file
 
 const languageToSwitch = process.argv[process.argv.length - 2];
+const envType = process.argv[process.argv.length - 1];
 
-console.log(languageToSwitch, process.argv);
+console.log(process.argv);
 
-const path = "./.env";
+let path = ".env";
+
+switch (envType) {
+  case "development":
+    path = ".env.development";
+    break;
+  case "production":
+    path = ".env.production";
+    break;
+  default:
+    path = ".env.development";
+    break;
+}
 
 fs.readFile(path, "utf8", function read(err, data) {
   if (err) {
     throw err;
   }
   const content = data;
+  var result = content;
 
   if (languageToSwitch === "it") {
-    var result = content.replace(
+    result = content.replace(
       /REACT_APP_MAIN_LANGUAGE=en/g,
       "REACT_APP_MAIN_LANGUAGE=it"
     );
   } else {
-    var result = content.replace(
+    result = content.replace(
       /REACT_APP_MAIN_LANGUAGE=it/g,
       "REACT_APP_MAIN_LANGUAGE=en"
     );
