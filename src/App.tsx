@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Homepage from "./components/Homepage";
-import Menu from "./components/Menu";
+import Menu from "./components/navbar/Menu";
 import "./css/full.min.css";
 import "./css/skeleton.scss";
 

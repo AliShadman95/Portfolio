@@ -4,8 +4,6 @@ const fs = require("fs");
 const languageToSwitch = process.argv[process.argv.length - 2];
 const envType = process.argv[process.argv.length - 1];
 
-console.log(process.argv);
-
 let path = ".env";
 
 switch (envType) {
