@@ -1,5 +1,11 @@
-import React, { Dispatch } from "react";
+import React, { Dispatch, useEffect, useState } from "react";
 import Brand from "./Brand";
+import menuJson from "./menu.json"
+import menuJsonEN from "./menu-en.json"
+
+
+const language = process.env.REACT_APP_MAIN_LANGUAGE
+
 
 interface Props {
   setSelectedSkin: Dispatch<React.SetStateAction<string>>;
@@ -7,6 +13,12 @@ interface Props {
 }
 
 function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
+  const [content, setContent] = useState<{}>(menuJson)
+  useEffect((): void => {
+    if (language === "en") {
+      setContent(menuJsonEN)
+    }
+  }, [])
   return (
     <nav
       className="navbar is-fullwidth color-background"
@@ -17,6 +29,7 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
 
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
+
           <div className="navbar-item has-dropdown is-hoverable color-text color-background">
             <a
               className="navbar-link link-animate color-text color-background"
