@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Homepage from "./components/Homepage";
 import Menu from "./components/navbar/Menu";
 import "./css/full.min.css";
@@ -7,46 +7,51 @@ import "./css/skeleton.scss";
 import Particles from "react-tsparticles";
 import particlesDefaultParams from "./json/particles.json";
 import particlesNightParams from "./json/particles-night.json";
+import Cookie from "./components/cookie/Cookie";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { Helmet } from "react-helmet";
+import Privacy from "./components/privacy/Privacy";
 
 function App(): JSX.Element {
   const [selectedSkin, setSelectedSkin] = useState<string>(
     localStorage.getItem("TYPE_OF_THEME")!
   );
 
-  /*   useEffect((): void => {
-    selectedSkin === "default"
-      ? require("./css/skin-default.scss")
-      : require("./css/skin-nightmode.scss");
-
-    console.log(selectedSkin);
-  }, [selectedSkin]); */
-
   return (
     <React.Fragment>
-      <Helmet>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href={
+      <Router>
+        <Helmet>
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href={
+              selectedSkin === "default"
+                ? "./css/skin-default.css"
+                : "./css/skin-nightmode.css"
+            }
+          />
+        </Helmet>
+        <Particles
+          id="particles-js"
+          options={
             selectedSkin === "default"
-              ? "./css/skin-default.css"
-              : "./css/skin-nightmode.css"
+              ? particlesDefaultParams
+              : particlesNightParams
           }
         />
-      </Helmet>
-
-      <Particles
-        id="particles-js"
-        options={
-          selectedSkin === "default"
-            ? particlesDefaultParams
-            : particlesNightParams
-        }
-      />
-      <Menu setSelectedSkin={setSelectedSkin} selectedSkin={selectedSkin} />
-      <Homepage />
+        <Menu setSelectedSkin={setSelectedSkin} selectedSkin={selectedSkin} />
+        <Route exact path="/">
+          <Homepage />
+        </Route>
+        <Route exact path="/cookie">
+          <Cookie />
+        </Route>
+        <Route exact path="/privacy">
+          <Privacy />
+        </Route>
+      </Router>
     </React.Fragment>
   );
 }
