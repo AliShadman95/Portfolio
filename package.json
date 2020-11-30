@@ -31,7 +31,8 @@
     "start-cpy-html": "cpy public/index-dev.html public/ --rename=index.html",
     "start-cpy-html-en": "cpy public/index-dev-en.html public/ --rename=index.html",
     "compile-scss": "sass ./public/css/skin-default.scss ./public/css/skin-default.css && sass ./public/css/skin-nightmode.scss ./public/css/skin-nightmode.css",
-    "build": "react-scripts build",
+    "build": "npm run start-cpy-html && node utils/replace-env-lang.js it development && npm run compile-scss && react-scripts build",
+    "build-en": "npm run start-cpy-html-en && node utils/replace-env-lang.js en development && npm run compile-scss && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
