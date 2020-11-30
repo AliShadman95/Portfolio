@@ -11,6 +11,7 @@ function Homepage() {
           <article>
             <h1 className="titleh1">Ali Shadman</h1>
             <p className="subtitle">
+              <p>{process.env.REACT_APP_MAIN_LANGUAGE}</p>
               Web Developer • Snooker Player • #snooker
             </p>
             <p>
