@@ -26,7 +26,6 @@ function App(): JSX.Element {
 
   useEffect(() => {
     // This line will trigger on a route change
-    console.log("calling this");
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
 
