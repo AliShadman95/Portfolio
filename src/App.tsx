@@ -17,7 +17,7 @@ import ReactGA from "react-ga";
 
 const language = process.env.REACT_APP_MAIN_LANGUAGE;
 
-ReactGA.initialize(language === "it" ? "G-EFLDM2C8E6" : "G-GX3E36H3EY");
+ReactGA.initialize(language === "it" ? "G-QHP917TNH2" : "G-NH364S79TQ");
 
 function App(): JSX.Element {
   const [selectedSkin, setSelectedSkin] = useState<string>(
