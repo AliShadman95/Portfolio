@@ -304,17 +304,32 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
               className="navbar-link link-animate color-text color-background lang-fix-height"
               href="#menu"
             >
-              <picture>
-                <source
-                  srcSet="/img/icons/menu/italian.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="/img/icons/menu/italian.png"
-                  className="png"
-                  alt="it-logo"
-                />
-              </picture>
+              {language === "it" ? (
+                <picture>
+                  <source
+                    srcSet="/img/icons/menu/italian.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/img/icons/menu/italian.png"
+                    className="png"
+                    alt="it-logo"
+                  />
+                </picture>
+              ) : (
+                <picture>
+                  <source
+                    srcSet="/img/icons/menu/english.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="/img/icons/menu/english.png"
+                    className="png"
+                    alt="English"
+                  />
+                </picture>
+              )}
+
               <span className="is-hidden-desktop">Lingue</span>
             </a>
 
