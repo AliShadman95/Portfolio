@@ -41,7 +41,12 @@
       },
       "onHover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "bubble",
+        "parallax": {
+          "enable": true,
+          "force": 30,
+          "smooth": 30
+        }
       }
     },
     "modes": {
@@ -141,5 +146,7 @@
         }
       }
     }
-  }
+  },
+  "pauseOnBlur": true,
+  "pauseOnOutsideViewport": true
 }
