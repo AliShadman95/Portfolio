@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Homepage from "./components/Homepage";
 import Menu from "./components/navbar/Menu";
 import "./css/full.min.css";
@@ -13,11 +13,22 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { Helmet } from "react-helmet";
 import Privacy from "./components/privacy/Privacy";
+import ReactGA from "react-ga";
+
+const language = process.env.REACT_APP_MAIN_LANGUAGE;
+
+ReactGA.initialize(language === "it" ? "G-EFLDM2C8E6" : "G-GX3E36H3EY");
 
 function App(): JSX.Element {
   const [selectedSkin, setSelectedSkin] = useState<string>(
     localStorage.getItem("TYPE_OF_THEME")!
   );
+
+  useEffect(() => {
+    // This line will trigger on a route change
+    console.log("calling this");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
 
   return (
     <React.Fragment>
