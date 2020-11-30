@@ -1,7 +1,10 @@
 import React from "react";
 
-interface Props {}
-function Brand(props: Props) {
+interface Props {
+  isBurgerOpen: Boolean;
+  setIsBurgerOpen: React.Dispatch<React.SetStateAction<Boolean>>;
+}
+function Brand({ isBurgerOpen, setIsBurgerOpen }: Props) {
   return (
     <div className="navbar-brand">
       <a
@@ -42,11 +45,12 @@ function Brand(props: Props) {
       <a
         role="button"
         id="navbar-burger"
-        className="navbar-burger burger"
+        className={`navbar-burger burger ${isBurgerOpen ? "is-active" : null}`}
         aria-label="menu"
         aria-expanded="false"
         data-target="navbar"
         href="#menu"
+        onClick={() => setIsBurgerOpen(!isBurgerOpen)}
       >
         <div id="menu-icon-wrapper" className="menu-icon-wrapper">
           <svg width="1000px" height="1000px">
