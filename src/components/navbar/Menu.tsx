@@ -371,7 +371,7 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
                 />
               </picture>
             </div>
-            <div className="buttons">
+            {/*  <div className="buttons">
               <a
                 href="https://cv.ashd.dev"
                 rel="nofollow external noopener noreferrer"
@@ -388,7 +388,7 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
                 </picture>
                 Curriculum Vitae
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
