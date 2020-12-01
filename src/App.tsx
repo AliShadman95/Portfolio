@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from "react";
-import Homepage from "./components/Homepage";
-import Menu from "./components/navbar/Menu";
+import loadable from "@loadable/component";
+
 import "./css/full.min.css";
 import "./css/skeleton.scss";
 
 import Particles from "react-tsparticles";
 import particlesDefaultParams from "./json/particles.json";
 import particlesNightParams from "./json/particles-night.json";
-import Cookie from "./components/cookie/Cookie";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { Helmet } from "react-helmet";
-import Privacy from "./components/privacy/Privacy";
 import ReactGA from "react-ga";
+const Homepage = loadable(() => import("./components/Homepage"));
+const Menu = loadable(() => import("./components/navbar/Menu"));
+const Cookie = loadable(() => import("./components/cookie/Cookie"));
+const Privacy = loadable(() => import("./components/privacy/Privacy"));
 
 const language = process.env.REACT_APP_MAIN_LANGUAGE;
 
@@ -33,6 +35,16 @@ function App(): JSX.Element {
     <React.Fragment>
       <Router>
         <Helmet>
+          <link
+            rel="preload"
+            as="style"
+            type="text/css"
+            href={
+              selectedSkin === "default"
+                ? "./css/skin-default.css"
+                : "./css/skin-nightmode.css"
+            }
+          />
           <link
             rel="stylesheet"
             type="text/css"

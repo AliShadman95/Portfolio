@@ -1,7 +1,9 @@
 import React, { Dispatch, useEffect, useState } from "react";
-import Brand from "./Brand";
+import loadable from "@loadable/component";
+
 import menuJson from "./menu.json";
 import menuJsonEN from "./menu-en.json";
+const Brand = loadable(() => import("./Brand"));
 
 const language = process.env.REACT_APP_MAIN_LANGUAGE;
 
@@ -13,6 +15,8 @@ interface Props {
 function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
   const [content, setContent] = useState<any>(menuJson);
   const [isBurgerOpen, setIsBurgerOpen] = useState<Boolean>(false);
+  const [activeNavItem, setActiveNavItem] = useState<Number>(-1);
+
   useEffect((): void => {
     if (language === "en") {
       setContent(menuJsonEN);
@@ -31,7 +35,17 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
         className={`navbar-menu ${isBurgerOpen ? "is-active" : null}`}
       >
         <div className="navbar-start">
-          <div className="navbar-item has-dropdown is-hoverable color-text color-background">
+          <div
+            className={`navbar-item has-dropdown color-text color-background ${
+              activeNavItem === 0 ? "is-active" : null
+            }`}
+            onMouseEnter={() => {
+              setActiveNavItem(0);
+            }}
+            onMouseLeave={() => {
+              setActiveNavItem(-1);
+            }}
+          >
             <a
               className="navbar-link link-animate color-text color-background"
               href="#menu"
@@ -97,7 +111,17 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
             </div>
           </div>
 
-          <div className="navbar-item has-dropdown is-hoverable color-text color-background">
+          <div
+            className={`navbar-item has-dropdown color-text color-background ${
+              activeNavItem === 1 ? "is-active" : null
+            }`}
+            onMouseEnter={() => {
+              setActiveNavItem(1);
+            }}
+            onMouseLeave={() => {
+              setActiveNavItem(-1);
+            }}
+          >
             <a
               className="navbar-link link-animate color-text color-background"
               href="#menu"
@@ -183,7 +207,17 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
             </div>
           </div>
 
-          <div className="navbar-item has-dropdown is-hoverable color-text color-background">
+          <div
+            className={`navbar-item has-dropdown color-text color-background ${
+              activeNavItem === 2 ? "is-active" : null
+            }`}
+            onMouseEnter={() => {
+              setActiveNavItem(2);
+            }}
+            onMouseLeave={() => {
+              setActiveNavItem(-1);
+            }}
+          >
             <a
               className="navbar-link link-animate color-text color-background"
               href="#menu"
@@ -280,7 +314,17 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
             </div>
           </div>
 
-          <div className="navbar-item has-dropdown is-hoverable color-text color-background">
+          <div
+            className={`navbar-item has-dropdown color-text color-background ${
+              activeNavItem === 3 ? "is-active" : null
+            }`}
+            onMouseEnter={() => {
+              setActiveNavItem(3);
+            }}
+            onMouseLeave={() => {
+              setActiveNavItem(-1);
+            }}
+          >
             <a
               className="navbar-link link-animate color-text color-background lang-fix-height"
               href="#menu"
@@ -311,7 +355,9 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
                 </picture>
               )}
 
-              <span className="is-hidden-desktop">Lingue</span>
+              <span className="is-hidden-desktop">
+                {content.items[3].title}
+              </span>
             </a>
 
             <div className="navbar-dropdown is-theme-navbar">
