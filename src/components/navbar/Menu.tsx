@@ -362,7 +362,7 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
 
             <div className="navbar-dropdown is-theme-navbar">
               <a
-                href="https://en.ashd.dev"
+                href="https://en.alishd.dev"
                 rel="nofollow external noopener noreferrer"
                 className="navbar-item link-animate"
               >
@@ -380,7 +380,7 @@ function Menu({ setSelectedSkin, selectedSkin }: Props): JSX.Element {
                 English
               </a>
               <a
-                href="https://ashd.dev"
+                href="https://alishd.dev"
                 rel="nofollow external noopener noreferrer"
                 className="navbar-item link-animate"
               >
