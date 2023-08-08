@@ -1,58 +1,25 @@
 {
-  "name": "new-portfolio2",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@loadable/component": "^5.14.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/jest": "^24.9.1",
-    "@types/loadable__component": "^5.13.1",
-    "@types/node": "^12.12.62",
-    "@types/react": "^16.9.50",
-    "@types/react-dom": "^16.9.8",
-    "@types/react-helmet": "^6.1.0",
-    "@types/react-router-dom": "^5.1.6",
-    "cpy-cli": "^3.1.1",
-    "html-react-parser": "^0.14.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-ga": "^3.3.0",
-    "react-helmet": "^6.1.0",
-    "react-particles-js": "^3.3.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "react-tsparticles": "^1.18.11",
-    "sass": "^1.26.12",
-    "serve": "^11.3.2",
-    "typescript": "^3.9.7"
-  },
   "scripts": {
-    "start": "npm run start-cpy-html && node utils/replace-env-lang.js it development && npm run compile-scss && react-scripts start",
-    "start-en": "npm run start-cpy-html-en && node utils/replace-env-lang.js en development && npm run compile-scss && react-scripts start",
-    "start-cpy-html": "cpy public/index-dev.html public/ --rename=index.html",
-    "start-cpy-html-en": "cpy public/index-dev-en.html public/ --rename=index.html",
-    "compile-scss": "sass ./public/css/skin-default.scss ./public/css/skin-default.css && sass ./public/css/skin-nightmode.scss ./public/css/skin-nightmode.css",
-    "build": "npm run start-cpy-html && node utils/replace-env-lang.js it production && npm run compile-scss && react-scripts build",
-    "build-en": "npm run start-cpy-html-en && node utils/replace-env-lang.js en production && npm run compile-scss && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.19",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "next": "13.4.13",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
   }
 }
