@@ -52,7 +52,7 @@ export default function Home() {
         <header className="pt-36">
           <div className="text-center flex justify-center">
             <Image
-              src="/images/ashd_ali_shadman_real.png"
+              src="/img/ashd_ali_shadman_real.png"
               width={150}
               height={150}
               alt="Picture of me :)"

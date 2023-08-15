@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: ["class"],
   safelist: [
     "text-facebook",
     "text-twitter",
@@ -56,6 +57,10 @@ const config: Config = {
         telegram: "#0088cc",
         whatsapp: "#25d366",
         email: "#ea4335",
+        "primary-blue": "#46aef7",
+        "secondary-blue": "#006699",
+        "primary-black": "#000000",
+        "secondary-black": "#0f0f0f",
       },
       keyframes: {
         bubble: {

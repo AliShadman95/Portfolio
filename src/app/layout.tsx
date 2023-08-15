@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import { Caveat_Brush } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Navbar from "@/components/navbar/Navbar";
+import { ThemeProvider } from "./ThemeProvider";
+
 config.autoAddCss = false;
 
 const inter = Caveat_Brush({
@@ -22,8 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="it">
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
